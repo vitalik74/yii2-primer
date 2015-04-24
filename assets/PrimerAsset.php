@@ -3,7 +3,7 @@
  * @copyright Copyright (c) 2014
  */
 
-namespace vitalik74\primer;
+namespace vitalik74\primer\assets;
 
 
 use yii\web\AssetBundle;
@@ -22,6 +22,6 @@ class PrimerAsset extends AssetBundle
      * @inheritdoc
      */
     public $css = [
-        'primer.scss',
+        'css/primer.css',
     ];
 }

@@ -29,3 +29,8 @@ phpunit.phar
 composer.lock
 
 /.idea
+tests/_output/*
+
+#/config
+#/web
+#/controllers
