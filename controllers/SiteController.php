@@ -66,4 +66,14 @@ class SiteController extends Controller
     {
         return $this->render('state');
     }
+
+    public function actionAvatar()
+    {
+        return $this->render('avatar');
+    }
+
+    public function actionBlankslate()
+    {
+        return $this->render('blankslate');
+    }
 }

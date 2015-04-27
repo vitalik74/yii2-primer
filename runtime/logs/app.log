@@ -1,0 +1,2279 @@
+2015-04-23 15:24:27 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\di\Container.php:415
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\di\Container.php(415): ReflectionClass->__construct('yii\gii\Module')
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\di\Container.php(358): yii\di\Container->getDependencies('yii\gii\Module')
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\gii\Module', Array, Array)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\gii\Module', Array)
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\gii\Module', Array)
+#5 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 C:\OpenServer\domains\yii2-primer\tests\codeception\bin\yii(28): yii\console\Application->__construct(Array)
+#12 {main}
+2015-04-23 15:24:27 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Android-sdk\\'
+    'ANDROID_PLATFORM_TOOLS' => 'C:\\Android-sdk\\\\platform-tools'
+    'ANDROID_TOOLS' => 'C:\\Android-sdk\\\\tools'
+    'ANT' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'ANT_BIN' => 'C:\\Program Files\\ant\\apache-ant-1.9.4\\bin'
+    'ANT_HOME' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'APPDATA' => 'C:\\Users\\Виталик\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'VITALIK_COMP'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuArgs' => '/Single'
+    'ConEmuBackHWND' => '0x0024092A'
+    'ConEmuBaseDir' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '131207'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\OpenServer\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x02E00454'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x002B0930'
+    'ConEmuPID' => '7256'
+    'ConEmuWorkDir' => 'C:\\OpenServer'
+    'ConEmuWorkDrive' => 'C:'
+    'FARADMINMODE' => '1'
+    'FARHOME' => 'C:\\flash\\Far2'
+    'FARLANG' => 'Russian'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Виталик'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'LOCALAPPDATA' => 'C:\\Users\\Виталик\\AppData\\Local'
+    'LOGONSERVER' => '\\\\VITALIK_COMP'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\OpenServer\\modules\\conemu\\ConEmu;C:\\OpenServer\\modules\\conemu;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'PHPBIN' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\\\php.exe'
+    'PHPDIR' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\'
+    'PHPRC' => 'C:\\OpenServer\\userdata\\temp\\config'
+    'PHP_BIN' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\php.exe'
+    'PHP_BINDIR' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\'
+    'PHP_DIR' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\'
+    'PHP_INI' => 'C:\\OpenServer\\userdata\\temp\\config\\php.ini'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\OpenServer\\userdata\\tmp'
+    'TMP' => 'C:\\OpenServer\\userdata\\tmp'
+    'USERDOMAIN' => 'Vitalik_comp'
+    'USERNAME' => 'Виталик'
+    'USERPROFILE' => 'C:\\Users\\Виталик'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'codeception/bin/yii'
+    'SCRIPT_NAME' => 'codeception/bin/yii'
+    'SCRIPT_FILENAME' => 'codeception/bin/yii'
+    'PATH_TRANSLATED' => 'codeception/bin/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1429788267.5967
+    'REQUEST_TIME' => 1429788267
+    'argv' => [
+        0 => 'codeception/bin/yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-04-23 15:24:47 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\di\Container.php:415
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\di\Container.php(415): ReflectionClass->__construct('yii\gii\Module')
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\di\Container.php(358): yii\di\Container->getDependencies('yii\gii\Module')
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\gii\Module', Array, Array)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\gii\Module', Array)
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\gii\Module', Array)
+#5 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 C:\OpenServer\domains\yii2-primer\tests\codeception\bin\yii(28): yii\console\Application->__construct(Array)
+#12 {main}
+2015-04-23 15:24:47 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Android-sdk\\'
+    'ANDROID_PLATFORM_TOOLS' => 'C:\\Android-sdk\\\\platform-tools'
+    'ANDROID_TOOLS' => 'C:\\Android-sdk\\\\tools'
+    'ANT' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'ANT_BIN' => 'C:\\Program Files\\ant\\apache-ant-1.9.4\\bin'
+    'ANT_HOME' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'APPDATA' => 'C:\\Users\\Виталик\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'VITALIK_COMP'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuArgs' => '/Single'
+    'ConEmuBackHWND' => '0x0024092A'
+    'ConEmuBaseDir' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '131207'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\OpenServer\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x02E00454'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x002B0930'
+    'ConEmuPID' => '7256'
+    'ConEmuWorkDir' => 'C:\\OpenServer'
+    'ConEmuWorkDrive' => 'C:'
+    'FARADMINMODE' => '1'
+    'FARHOME' => 'C:\\flash\\Far2'
+    'FARLANG' => 'Russian'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Виталик'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'LOCALAPPDATA' => 'C:\\Users\\Виталик\\AppData\\Local'
+    'LOGONSERVER' => '\\\\VITALIK_COMP'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\OpenServer\\modules\\conemu\\ConEmu;C:\\OpenServer\\modules\\conemu;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'PHPBIN' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\\\php.exe'
+    'PHPDIR' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\'
+    'PHPRC' => 'C:\\OpenServer\\userdata\\temp\\config'
+    'PHP_BIN' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\php.exe'
+    'PHP_BINDIR' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\'
+    'PHP_DIR' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\'
+    'PHP_INI' => 'C:\\OpenServer\\userdata\\temp\\config\\php.ini'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\OpenServer\\userdata\\tmp'
+    'TMP' => 'C:\\OpenServer\\userdata\\tmp'
+    'USERDOMAIN' => 'Vitalik_comp'
+    'USERNAME' => 'Виталик'
+    'USERPROFILE' => 'C:\\Users\\Виталик'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'codeception/bin/yii'
+    'SCRIPT_NAME' => 'codeception/bin/yii'
+    'SCRIPT_FILENAME' => 'codeception/bin/yii'
+    'PATH_TRANSLATED' => 'codeception/bin/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1429788287.4818
+    'REQUEST_TIME' => 1429788287
+    'argv' => [
+        0 => 'codeception/bin/yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-04-23 15:51:40 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'tests\codeception\_pages\Button2Page' not found' in C:\OpenServer\domains\yii2-primer\tests\codeception\functional\ButtonCept.php:8
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(860): Codeception\TestCase\Cept->testCodecept()
+#1 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(860): ReflectionMethod->invokeArgs()
+#2 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(737): PHPUnit_Framework_TestCase->runTest()
+#3 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestResult.php(609): PHPUnit_Framework_TestCase->runBare()
+#4 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(693): PHPUnit_Framework_TestResult->run()
+#5 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestSuite.php(716): PHPUnit_Framework_TestCase->run()
+#6 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\PHPUnit\Runner.php(100): PHPUnit_Framework_TestSuite->run()
+#7 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\SuiteManager.php(153): Codeception\PHPUnit\Runner->doEnhancedRun()
+#8 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Codecept.php(166): Codeception\SuiteManager->run()
+#9 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Codecept.php(149): Codeception\Codecept->runSuite()
+#10 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Command\Run.php(262): Codeception\Codecept->run()
+#11 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Command\Run.php(191): Codeception\Command\Run->runSuites()
+#12 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(257): Codeception\Command\Run->execute()
+#13 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Symfony\Component\Console\Command\Command->run()
+#14 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand()
+#15 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun()
+#16 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\codecept(27): Symfony\Component\Console\Application->run()
+#17 {main}
+2015-04-23 15:51:39 [][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Android-sdk\\'
+    'ANDROID_PLATFORM_TOOLS' => 'C:\\Android-sdk\\\\platform-tools'
+    'ANDROID_TOOLS' => 'C:\\Android-sdk\\\\tools'
+    'ANT' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'ANT_BIN' => 'C:\\Program Files\\ant\\apache-ant-1.9.4\\bin'
+    'ANT_HOME' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'APPDATA' => 'C:\\Users\\Виталик\\AppData\\Roaming'
+    'BIN_TARGET' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'VITALIK_COMP'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Виталик'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'LOCALAPPDATA' => 'C:\\Users\\Виталик\\AppData\\Local'
+    'LOGONSERVER' => '\\\\VITALIK_COMP'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\;C:\\Program Files\\ant\\apache-ant-1.9.4\\bin;C:\\Android-sdk\\tools;C:\\Android-sdk\\platform-tools;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin\\;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Виталик\\AppData\\Roaming\\npm\\;C:\\Users\\Виталик\\AppData\\Roaming\\npm;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'PHP_BINDIR' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\DA27~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\DA27~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'Vitalik_comp'
+    'USERNAME' => 'Виталик'
+    'USERPROFILE' => 'C:\\Users\\Виталик'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'SCRIPT_NAME' => '/index-test.php'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\yii2-primer/web/index-test.php'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1429789899.346
+    'REQUEST_TIME' => 1429789899
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+        1 => 'run'
+        2 => 'functional'
+    ]
+    'argc' => 3
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => 8080
+]
+2015-04-23 15:52:14 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'ButtonPage' not found' in C:\OpenServer\domains\yii2-primer\tests\codeception\functional\ButtonCept.php:8
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(860): Codeception\TestCase\Cept->testCodecept()
+#1 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(860): ReflectionMethod->invokeArgs()
+#2 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(737): PHPUnit_Framework_TestCase->runTest()
+#3 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestResult.php(609): PHPUnit_Framework_TestCase->runBare()
+#4 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(693): PHPUnit_Framework_TestResult->run()
+#5 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestSuite.php(716): PHPUnit_Framework_TestCase->run()
+#6 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\PHPUnit\Runner.php(100): PHPUnit_Framework_TestSuite->run()
+#7 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\SuiteManager.php(153): Codeception\PHPUnit\Runner->doEnhancedRun()
+#8 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Codecept.php(166): Codeception\SuiteManager->run()
+#9 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Codecept.php(149): Codeception\Codecept->runSuite()
+#10 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Command\Run.php(262): Codeception\Codecept->run()
+#11 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Command\Run.php(191): Codeception\Command\Run->runSuites()
+#12 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(257): Codeception\Command\Run->execute()
+#13 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Symfony\Component\Console\Command\Command->run()
+#14 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand()
+#15 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun()
+#16 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\codecept(27): Symfony\Component\Console\Application->run()
+#17 {main}
+2015-04-23 15:52:14 [][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Android-sdk\\'
+    'ANDROID_PLATFORM_TOOLS' => 'C:\\Android-sdk\\\\platform-tools'
+    'ANDROID_TOOLS' => 'C:\\Android-sdk\\\\tools'
+    'ANT' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'ANT_BIN' => 'C:\\Program Files\\ant\\apache-ant-1.9.4\\bin'
+    'ANT_HOME' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'APPDATA' => 'C:\\Users\\Виталик\\AppData\\Roaming'
+    'BIN_TARGET' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'VITALIK_COMP'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Виталик'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'LOCALAPPDATA' => 'C:\\Users\\Виталик\\AppData\\Local'
+    'LOGONSERVER' => '\\\\VITALIK_COMP'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\;C:\\Program Files\\ant\\apache-ant-1.9.4\\bin;C:\\Android-sdk\\tools;C:\\Android-sdk\\platform-tools;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin\\;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Виталик\\AppData\\Roaming\\npm\\;C:\\Users\\Виталик\\AppData\\Roaming\\npm;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'PHP_BINDIR' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\DA27~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\DA27~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'Vitalik_comp'
+    'USERNAME' => 'Виталик'
+    'USERPROFILE' => 'C:\\Users\\Виталик'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'SCRIPT_NAME' => '/index-test.php'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\yii2-primer/web/index-test.php'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1429789934.339
+    'REQUEST_TIME' => 1429789934
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+        1 => 'run'
+        2 => 'functional'
+    ]
+    'argc' => 3
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => 8080
+]
+2015-04-23 16:00:20 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/index".' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/index', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\yii2-primer\web\index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\yii2-primer\web\index.php(14): yii\base\Application->run()
+#2 {main}
+2015-04-23 16:00:19 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index.php'
+    'REMOTE_PORT' => '20470'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429790419.917
+    'REQUEST_TIME' => 1429790419
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:00:39 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/index".' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/index', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\yii2-primer\web\index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\yii2-primer\web\index.php(14): yii\base\Application->run()
+#2 {main}
+2015-04-23 16:00:39 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii2-primer/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index.php'
+    'REMOTE_PORT' => '20473'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429790439.703
+    'REQUEST_TIME' => 1429790439
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:00:54 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/index".' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/index', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#2 {main}
+2015-04-23 16:00:54 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20476'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PHP_SELF' => '/web/index-test.php'
+    'REQUEST_TIME_FLOAT' => 1429790454.509
+    'REQUEST_TIME' => 1429790454
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:01:30 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\Test' not found' in C:\OpenServer\domains\yii2-primer\controllers\SiteController.php:75
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#6 {main}
+2015-04-23 16:01:30 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20481'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PHP_SELF' => '/web/index-test.php'
+    'REQUEST_TIME_FLOAT' => 1429790490.087
+    'REQUEST_TIME' => 1429790490
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:11:12 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'PrimerAsset' not found' in C:\OpenServer\domains\yii2-primer\views\layouts\main.php:11
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent()
+#3 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#5 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#11 {main}
+2015-04-23 16:11:12 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20540'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429791072.268
+    'REQUEST_TIME' => 1429791072
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:11:41 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'vitalik74\primer\PrimerAsset' not found' in C:\OpenServer\domains\yii2-primer\views\layouts\main.php:11
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent()
+#3 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#5 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#11 {main}
+2015-04-23 16:11:41 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20551'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429791101.474
+    'REQUEST_TIME' => 1429791101
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:12:04 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'vitalik74\primer\PrimerAsset' not found' in C:\OpenServer\domains\yii2-primer\views\layouts\main.php:11
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent()
+#3 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#5 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#11 {main}
+2015-04-23 16:12:04 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20552'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429791124.214
+    'REQUEST_TIME' => 1429791124
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:16:00 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'vitalik74\primer\PrimerAsset' not found' in C:\OpenServer\domains\yii2-primer\views\layouts\main.php:11
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent()
+#3 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#5 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#11 {main}
+2015-04-23 16:16:00 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20595'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429791360.213
+    'REQUEST_TIME' => 1429791360
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:25:33 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-23 16:25:33 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20791'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429791933.056
+    'REQUEST_TIME' => 1429791933
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:27:03 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-23 16:27:03 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20792'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429792023.119
+    'REQUEST_TIME' => 1429792023
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:27:05 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-23 16:27:05 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20798'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429792025.045
+    'REQUEST_TIME' => 1429792025
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:27:06 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-23 16:27:06 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20799'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429792026.06
+    'REQUEST_TIME' => 1429792026
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:27:41 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-23 16:27:41 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20805'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429792061.141
+    'REQUEST_TIME' => 1429792061
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:27:51 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-23 16:27:51 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20809'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429792071.047
+    'REQUEST_TIME' => 1429792071
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:27:53 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-23 16:27:53 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20810'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429792073.207
+    'REQUEST_TIME' => 1429792073
+    'argv' => []
+    'argc' => 0
+]
+2015-04-23 16:28:00 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-23 16:28:00 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '20812'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429792080.129
+    'REQUEST_TIME' => 1429792080
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 07:56:40 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-24 07:56:40 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22337'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429847800.583
+    'REQUEST_TIME' => 1429847800
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 07:57:15 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-24 07:57:15 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22341'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429847835.798
+    'REQUEST_TIME' => 1429847835
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 07:57:43 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-24 07:57:43 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22350'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429847863.501
+    'REQUEST_TIME' => 1429847863
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 07:57:53 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-24 07:57:53 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22352'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429847873.868
+    'REQUEST_TIME' => 1429847873
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 08:01:36 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/primer-css' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('vitalik74\prime...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('vitalik74\prime...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('vitalik74\prime...')
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#11 [internal function]: app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-24 08:01:36 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22627'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429848096.833
+    'REQUEST_TIME' => 1429848096
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 08:02:09 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'filemtime(): stat failed for C:\OpenServer\domains\yii2-primer\web\assets\bfbf3b67/primer.scss' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetConverter.php:68
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(173): yii\web\AssetConverter->convert()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle()
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle()
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent()
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render()
+#11 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-24 08:02:09 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22636'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429848129.242
+    'REQUEST_TIME' => 1429848129
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 08:02:27 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'filemtime(): stat failed for C:\OpenServer\domains\yii2-primer\web\assets\bfbf3b67/primer.scss' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetConverter.php:68
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(173): yii\web\AssetConverter->convert()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle()
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle()
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent()
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render()
+#11 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-24 08:02:27 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22640'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429848147.439
+    'REQUEST_TIME' => 1429848147
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 08:02:50 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'filemtime(): stat failed for C:\OpenServer\domains\yii2-primer\web\assets\8b853e4e/primer.scss' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetConverter.php:68
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(173): yii\web\AssetConverter->convert()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle()
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle()
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent()
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render()
+#11 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-24 08:02:50 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22648'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429848170.837
+    'REQUEST_TIME' => 1429848170
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 08:03:05 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'filemtime(): stat failed for C:\OpenServer\domains\yii2-primer\web\assets\8b853e4e/primer.scss' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetConverter.php:68
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(173): yii\web\AssetConverter->convert()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle()
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle()
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent()
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render()
+#11 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-24 08:03:05 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22649'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429848185.461
+    'REQUEST_TIME' => 1429848185
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 08:03:37 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'filemtime(): stat failed for C:\OpenServer\domains\yii2-primer\web\assets\bfbf3b67/css/primer.scss' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetConverter.php:68
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(173): yii\web\AssetConverter->convert()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle()
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle()
+#5 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(11): yii\web\AssetBundle::register()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent()
+#10 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render()
+#11 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#12 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#17 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#18 {main}
+2015-04-24 08:03:36 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22655'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429848216.501
+    'REQUEST_TIME' => 1429848216
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 08:04:31 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/bootstrap/dist' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('yii\bootstrap\B...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\bootstrap\B...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('yii\bootstrap\B...')
+#5 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2-bootstrap\Nav.php(118): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Widget.php(96): yii\bootstrap\Nav->run()
+#7 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(47): yii\base\Widget::widget(Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#10 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#11 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#12 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#13 [internal function]: app\controllers\SiteController->actionButton()
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#17 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#18 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#20 {main}
+2015-04-24 08:04:31 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22663'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429848271.469
+    'REQUEST_TIME' => 1429848271
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 08:05:24 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/bootstrap/dist' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('yii\bootstrap\B...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\bootstrap\B...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('yii\bootstrap\B...')
+#5 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2-bootstrap\Nav.php(118): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Widget.php(96): yii\bootstrap\Nav->run()
+#7 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(47): yii\base\Widget::widget(Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#10 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#11 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->renderContent('button')
+#12 [internal function]: app\controllers\SiteController->actionButton()
+#13 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#17 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#19 {main}
+2015-04-24 08:05:23 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN%22%3B%7D'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22669'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429848323.942
+    'REQUEST_TIME' => 1429848323
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 08:05:33 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii2-primer\vendor\bower/bootstrap/dist' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php:407
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(162): yii\web\AssetManager->publish('C:\OpenServer\d...', Array)
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetManager.php(201): yii\web\AssetManager->loadBundle('yii\bootstrap\B...', Array, true)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\bootstrap\B...')
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\AssetBundle.php(118): yii\web\View->registerAssetBundle('yii\bootstrap\B...')
+#5 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2-bootstrap\Nav.php(118): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Widget.php(96): yii\bootstrap\Nav->run()
+#7 C:\OpenServer\domains\yii2-primer\views\layouts\main.php(47): yii\base\Widget::widget(Array)
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#10 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#11 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('??lavanda')
+#12 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(56): yii\base\Controller->render('button')
+#13 [internal function]: app\controllers\SiteController->actionButton()
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('button', Array)
+#17 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/button', Array)
+#18 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#20 {main}
+2015-04-24 08:05:33 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN%22%3B%7D'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '22670'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429848333.14
+    'REQUEST_TIME' => 1429848333
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 08:48:53 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method vitalik74\primer\Button::primaryButton()' in C:\OpenServer\domains\yii2-primer\views\site\button.php:13
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#3 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(62): yii\base\Controller->render()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#5 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#11 {main}
+2015-04-24 08:48:52 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN%22%3B%7D'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '23562'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429850932.895
+    'REQUEST_TIME' => 1429850932
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 09:00:24 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal offset type in isset or empty' in C:\OpenServer\domains\yii2-primer\Button.php:66
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\views\site\button.php(12): vitalik74\primer\Button::button()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#5 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(62): yii\base\Controller->render()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#10 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#11 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#12 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#13 {main}
+2015-04-24 09:00:24 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN%22%3B%7D'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '23931'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429851624.069
+    'REQUEST_TIME' => 1429851624
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 09:00:45 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal offset type' in C:\OpenServer\domains\yii2-primer\Button.php:66
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\views\site\button.php(12): vitalik74\primer\Button::button()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#5 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(62): yii\base\Controller->render()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#10 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#11 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#12 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#13 {main}
+2015-04-24 09:00:44 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN%22%3B%7D'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '23940'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429851644.954
+    'REQUEST_TIME' => 1429851644
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 09:04:42 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal offset type' in C:\OpenServer\domains\yii2-primer\Button.php:67
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\views\site\button.php(12): vitalik74\primer\Button::button()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#5 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(62): yii\base\Controller->render()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionButton()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#10 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#11 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#12 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#13 {main}
+2015-04-24 09:04:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN%22%3B%7D'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '24016'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/button'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/button'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\button'
+    'PHP_SELF' => '/web/index-test.php/site/button'
+    'REQUEST_TIME_FLOAT' => 1429851882.054
+    'REQUEST_TIME' => 1429851882
+    'argv' => []
+    'argc' => 0
+]
+2015-04-24 15:19:06 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'src'' in C:\OpenServer\domains\yii2-primer\Avatar.php:55
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#2 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#4 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(72): yii\base\Controller->render()
+#5 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionAvatar()
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#7 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#10 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#11 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#12 {main}
+2015-04-24 15:19:06 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=fd1bb74ed3b4e734f47c0e3e4f5641fc302d213c4ef2deca32fe4082886950bba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rF8UdJpBOBmo4dRIslMqrgrdloLc2fkN%22%3B%7D'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '35842'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/avatar'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/avatar'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\avatar'
+    'PHP_SELF' => '/web/index-test.php/site/avatar'
+    'REQUEST_TIME_FLOAT' => 1429874346.289
+    'REQUEST_TIME' => 1429874346
+    'argv' => []
+    'argc' => 0
+]
