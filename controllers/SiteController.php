@@ -76,4 +76,9 @@ class SiteController extends Controller
     {
         return $this->render('blankslate');
     }
+
+    public function actionTooltip()
+    {
+        return $this->render('tooltip');
+    }
 }
