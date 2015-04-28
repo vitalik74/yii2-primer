@@ -2277,3 +2277,97 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2015-04-28 15:46:41 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function filterXPath() on a non-object' in C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Lib\InnerBrowser.php:776
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Step.php(125): Codeception\Lib\InnerBrowser->seeElement()
+#1 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Step.php(125): ::call_user_func_array()
+#2 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\TestCase\Shared\Actor.php(67): Codeception\Step->run()
+#3 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Scenario.php(94): Codeception\TestCase\Cept->runStep()
+#4 C:\OpenServer\domains\yii2-primer\tests\codeception\functional\FunctionalTester.php(1935): Codeception\Scenario->runStep()
+#5 C:\OpenServer\domains\yii2-primer\tests\codeception\functional\NavCept.php(5): FunctionalTester->seeElement()
+#6 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\TestCase\Cept.php(64): ::unknown()
+#7 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(860): Codeception\TestCase\Cept->testCodecept()
+#8 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(860): ReflectionMethod->invokeArgs()
+#9 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(737): PHPUnit_Framework_TestCase->runTest()
+#10 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestResult.php(609): PHPUnit_Framework_TestCase->runBare()
+#11 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(693): PHPUnit_Framework_TestResult->run()
+#12 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestSuite.php(716): PHPUnit_Framework_TestCase->run()
+#13 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\PHPUnit\Runner.php(100): PHPUnit_Framework_TestSuite->run()
+#14 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\SuiteManager.php(153): Codeception\PHPUnit\Runner->doEnhancedRun()
+#15 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Codecept.php(166): Codeception\SuiteManager->run()
+#16 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Codecept.php(149): Codeception\Codecept->runSuite()
+#17 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Command\Run.php(262): Codeception\Codecept->run()
+#18 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Command\Run.php(191): Codeception\Command\Run->runSuites()
+#19 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(257): Codeception\Command\Run->execute()
+#20 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Symfony\Component\Console\Command\Command->run()
+#21 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand()
+#22 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun()
+#23 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\codecept(27): Symfony\Component\Console\Application->run()
+#24 {main}
+2015-04-28 15:46:40 [][-][-][info][application] $_SERVER = [
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\yii2-primer/web/index-test.php'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Android-sdk\\'
+    'ANDROID_PLATFORM_TOOLS' => 'C:\\Android-sdk\\\\platform-tools'
+    'ANDROID_TOOLS' => 'C:\\Android-sdk\\\\tools'
+    'ANT' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'ANT_BIN' => 'C:\\Program Files\\ant\\apache-ant-1.9.4\\bin'
+    'ANT_HOME' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'APPDATA' => 'C:\\Users\\Виталик\\AppData\\Roaming'
+    'BIN_TARGET' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'VITALIK_COMP'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Виталик'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'LOCALAPPDATA' => 'C:\\Users\\Виталик\\AppData\\Local'
+    'LOGONSERVER' => '\\\\VITALIK_COMP'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\;C:\\Program Files\\ant\\apache-ant-1.9.4\\bin;C:\\Android-sdk\\tools;C:\\Android-sdk\\platform-tools;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin\\;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Виталик\\AppData\\Roaming\\npm\\;C:\\Users\\Виталик\\AppData\\Roaming\\npm;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'PHP_BINDIR' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\DA27~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\DA27~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'Vitalik_comp'
+    'USERNAME' => 'Виталик'
+    'USERPROFILE' => 'C:\\Users\\Виталик'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1430221600.6122
+    'REQUEST_TIME' => 1430221600
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+        1 => 'run'
+        2 => 'functional'
+        3 => '--no-colors'
+    ]
+    'argc' => 4
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_PORT' => '80'
+]

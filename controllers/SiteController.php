@@ -81,4 +81,9 @@ class SiteController extends Controller
     {
         return $this->render('tooltip');
     }
+
+    public function actionNav()
+    {
+        return $this->render('nav');
+    }
 }
