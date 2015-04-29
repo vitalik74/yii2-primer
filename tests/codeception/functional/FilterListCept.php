@@ -8,4 +8,4 @@ FilterListPage::openBy($I);
 
 $I->seeElement('.filter-list');
 $I->seeElement('.filter-item');
-$I->seeElement('.filter-item.selected1');
+$I->seeElement('.filter-item.selected');

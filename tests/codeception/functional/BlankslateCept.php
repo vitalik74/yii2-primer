@@ -6,6 +6,7 @@ $I = new FunctionalTester($scenario);
 $I->wantTo('ensure that blankslate works');
 
 $buttonPage = BlankslatePage::openBy($I);
+
 $I->seeElement('#blankslate.blankslate');
 $I->seeElement('#spacious.blankslate.spacious');
 $I->seeElement('#clean.blankslate.clean-background');

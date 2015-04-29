@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\SignupForm;
 use app\models\Test;
+use app\models\User;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\filters\AccessControl;
@@ -90,5 +91,12 @@ class SiteController extends Controller
     public function actionFilterList()
     {
         return $this->render('filterlist');
+    }
+
+    public function actionForm()
+    {
+        return $this->render('form', [
+            'model' => new User()
+        ]);
     }
 }
