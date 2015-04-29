@@ -86,4 +86,9 @@ class SiteController extends Controller
     {
         return $this->render('nav');
     }
+
+    public function actionFilterList()
+    {
+        return $this->render('filterlist');
+    }
 }
