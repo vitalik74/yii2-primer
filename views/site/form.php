@@ -9,11 +9,7 @@ use vitalik74\primer\ActiveForm;
 ?>
 
 <div class="site-state">
-    <? $form = ActiveForm::begin([
-         'fieldConfig' => [
-             'template' => "{label}\n{beginWrapper}\n{input}\n{hint}\n{error}\n{endWrapper}",
-         ],
-    ]); ?>
+    <? $form = ActiveForm::begin([]); ?>
 
     <?= $form->field($model, 'username') ?>
     <?= $form->field($model, 'password')->passwordInput() ?>

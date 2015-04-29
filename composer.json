@@ -41,11 +41,12 @@
     "yiisoft/yii2-codeception": "*",
     "yiisoft/yii2-debug": "*",
     "yiisoft/yii2-gii": "*",
-    "yiisoft/yii2-faker": "*"
+    "yiisoft/yii2-faker": "*",
+    "yiisoft/yii2-apidoc": "*"
   },
   "autoload": {
     "psr-4": {
-      "vitalik74\\primer\\": ""
+      "vitalik74\\primer\\": "src"
     }
   },
   "extra": {

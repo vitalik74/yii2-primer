@@ -2371,3 +2371,240 @@ Stack trace:
     'SERVER_NAME' => 'yii2-primer'
     'SERVER_PORT' => '80'
 ]
+2015-04-29 09:29:13 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Mock_ContactForm_757d1090::contact()' in C:\OpenServer\domains\yii2-primer\tests\codeception\unit\models\ContactFormTest.php:39
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(860): ReflectionMethod->invokeArgs()
+#1 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(737): PHPUnit_Framework_TestCase->runTest()
+#2 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestResult.php(609): PHPUnit_Framework_TestCase->runBare()
+#3 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(693): PHPUnit_Framework_TestResult->run()
+#4 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestSuite.php(716): PHPUnit_Framework_TestCase->run()
+#5 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\PHPUnit\Runner.php(100): PHPUnit_Framework_TestSuite->run()
+#6 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\SuiteManager.php(153): Codeception\PHPUnit\Runner->doEnhancedRun()
+#7 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Codecept.php(166): Codeception\SuiteManager->run()
+#8 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Codecept.php(149): Codeception\Codecept->runSuite()
+#9 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Command\Run.php(262): Codeception\Codecept->run()
+#10 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Command\Run.php(191): Codeception\Command\Run->runSuites()
+#11 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(257): Codeception\Command\Run->execute()
+#12 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Symfony\Component\Console\Command\Command->run()
+#13 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand()
+#14 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun()
+#15 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\codecept(27): Symfony\Component\Console\Application->run()
+#16 {main}
+2015-04-29 09:29:12 [][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Android-sdk\\'
+    'ANDROID_PLATFORM_TOOLS' => 'C:\\Android-sdk\\\\platform-tools'
+    'ANDROID_TOOLS' => 'C:\\Android-sdk\\\\tools'
+    'ANT' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'ANT_BIN' => 'C:\\Program Files\\ant\\apache-ant-1.9.4\\bin'
+    'ANT_HOME' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'APPDATA' => 'C:\\Users\\Виталик\\AppData\\Roaming'
+    'BIN_TARGET' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'VITALIK_COMP'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Виталик'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'LOCALAPPDATA' => 'C:\\Users\\Виталик\\AppData\\Local'
+    'LOGONSERVER' => '\\\\VITALIK_COMP'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\;C:\\Program Files\\ant\\apache-ant-1.9.4\\bin;C:\\Android-sdk\\tools;C:\\Android-sdk\\platform-tools;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin\\;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Виталик\\AppData\\Roaming\\npm\\;C:\\Users\\Виталик\\AppData\\Roaming\\npm;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'PHP_BINDIR' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\DA27~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\DA27~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'Vitalik_comp'
+    'USERNAME' => 'Виталик'
+    'USERPROFILE' => 'C:\\Users\\Виталик'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\yii2-primer/web/index-test.php'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1430285352.2386
+    'REQUEST_TIME' => 1430285352
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+        1 => 'run'
+        2 => 'unit'
+        3 => '--no-colors'
+    ]
+    'argc' => 4
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_PORT' => '80'
+]
+2015-04-29 14:20:44 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Mock_ContactForm_541a2906::contact()' in C:\OpenServer\domains\yii2-primer\tests\codeception\unit\models\ContactFormTest.php:39
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(860): ReflectionMethod->invokeArgs()
+#1 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(737): PHPUnit_Framework_TestCase->runTest()
+#2 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestResult.php(609): PHPUnit_Framework_TestCase->runBare()
+#3 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestCase.php(693): PHPUnit_Framework_TestResult->run()
+#4 C:\OpenServer\domains\yii2-primer\vendor\phpunit\phpunit\src\Framework\TestSuite.php(716): PHPUnit_Framework_TestCase->run()
+#5 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\PHPUnit\Runner.php(100): PHPUnit_Framework_TestSuite->run()
+#6 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\SuiteManager.php(153): Codeception\PHPUnit\Runner->doEnhancedRun()
+#7 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Codecept.php(166): Codeception\SuiteManager->run()
+#8 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Codecept.php(149): Codeception\Codecept->runSuite()
+#9 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Command\Run.php(262): Codeception\Codecept->run()
+#10 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\src\Codeception\Command\Run.php(191): Codeception\Command\Run->runSuites()
+#11 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(257): Codeception\Command\Run->execute()
+#12 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Symfony\Component\Console\Command\Command->run()
+#13 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand()
+#14 C:\OpenServer\domains\yii2-primer\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun()
+#15 C:\OpenServer\domains\yii2-primer\vendor\codeception\codeception\codecept(27): Symfony\Component\Console\Application->run()
+#16 {main}
+2015-04-29 14:20:43 [][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Android-sdk\\'
+    'ANDROID_PLATFORM_TOOLS' => 'C:\\Android-sdk\\\\platform-tools'
+    'ANDROID_TOOLS' => 'C:\\Android-sdk\\\\tools'
+    'ANT' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'ANT_BIN' => 'C:\\Program Files\\ant\\apache-ant-1.9.4\\bin'
+    'ANT_HOME' => 'C:\\Program Files\\ant\\apache-ant-1.9.4'
+    'APPDATA' => 'C:\\Users\\Виталик\\AppData\\Roaming'
+    'BIN_TARGET' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'VITALIK_COMP'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Виталик'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_05'
+    'LOCALAPPDATA' => 'C:\\Users\\Виталик\\AppData\\Local'
+    'LOGONSERVER' => '\\\\VITALIK_COMP'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\;C:\\Program Files\\ant\\apache-ant-1.9.4\\bin;C:\\Android-sdk\\tools;C:\\Android-sdk\\platform-tools;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin\\;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Виталик\\AppData\\Roaming\\npm\\;C:\\Users\\Виталик\\AppData\\Roaming\\npm;C:\\Users\\Виталик\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'PHP_BINDIR' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\DA27~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\DA27~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'Vitalik_comp'
+    'USERNAME' => 'Виталик'
+    'USERPROFILE' => 'C:\\Users\\Виталик'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\yii2-primer/web/index-test.php'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1430302843.497
+    'REQUEST_TIME' => 1430302843
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\yii2-primer\\tests\\/../vendor/codeception/codeception/codecept'
+        1 => 'run'
+        2 => 'unit'
+        3 => '--no-colors'
+    ]
+    'argc' => 4
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_PORT' => '80'
+]
+2015-04-29 14:25:24 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: vitalik74\primer\ActiveForm::layout' in C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2-bootstrap\ActiveField.php(336): yii\base\Component->__get('layout')
+#1 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2-bootstrap\ActiveField.php(154): yii\bootstrap\ActiveField->createLayoutConfig(Array)
+#2 [internal function]: yii\bootstrap\ActiveField->__construct(Array)
+#3 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('vitalik74\prime...', Array, Array)
+#5 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('vitalik74\prime...', Array, Array)
+#6 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\widgets\ActiveForm.php(280): yii\BaseYii::createObject(Array)
+#7 C:\OpenServer\domains\yii2-primer\views\site\form.php(18): yii\widgets\ActiveForm->field(Object(app\models\User), 'username')
+#8 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(325): require('C:\OpenServer\d...')
+#9 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\OpenServer\d...', Array)
+#10 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\OpenServer\d...', Array, Object(app\controllers\SiteController))
+#11 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('form', Array, Object(app\controllers\SiteController))
+#12 C:\OpenServer\domains\yii2-primer\controllers\SiteController.php(100): yii\base\Controller->render('form', Array)
+#13 [internal function]: app\controllers\SiteController->actionForm()
+#14 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('form', Array)
+#17 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/form', Array)
+#18 C:\OpenServer\domains\yii2-primer\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii2-primer\web\index-test.php(16): yii\base\Application->run()
+#20 {main}
+2015-04-29 14:25:24 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '38d9f4a5c72a7d35d9ccee1388bf49ada144de410d3e4e19659105daf1c97f47a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Jx_GAMo4lVI1wrIR25_6zteCe0gSkHm4\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2-primer'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=38d9f4a5c72a7d35d9ccee1388bf49ada144de410d3e4e19659105daf1c97f47a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Jx_GAMo4lVI1wrIR25_6zteCe0gSkHm4%22%3B%7D'
+    'PATH' => 'C:\\OpenServer\\modules\\php\\PHP-5.4.22\\ext;C:\\OpenServer\\modules\\php\\PHP-5.4.22\\pear;C:\\OpenServer\\modules\\imagemagick;C:\\OpenServer\\modules\\php\\PHP-5.4.22;C:\\OpenServer\\modules\\database\\MySQL-5.6.15\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26\\bin;C:\\OpenServer\\modules\\http\\Apache-2.2.26;C:\\OpenServer\\modules\\wget\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.26 (Win32)'
+    'SERVER_NAME' => 'yii2-primer'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2-primer'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2-primer/web/index-test.php'
+    'REMOTE_PORT' => '15024'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index-test.php/site/form'
+    'SCRIPT_NAME' => '/web/index-test.php'
+    'PATH_INFO' => '/site/form'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\yii2-primer\\site\\form'
+    'PHP_SELF' => '/web/index-test.php/site/form'
+    'REQUEST_TIME_FLOAT' => 1430303124.693
+    'REQUEST_TIME' => 1430303124
+    'argv' => []
+    'argc' => 0
+]

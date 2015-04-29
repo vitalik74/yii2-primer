@@ -6,4 +6,4 @@ $I->wantTo('ensure that form works');
 
 FormPage::openBy($I);
 
-$I->see('lavanda');
+$I->seeElement('.form');
