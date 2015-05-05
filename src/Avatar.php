@@ -14,7 +14,7 @@ use yii\helpers\Html;
 
 /**
  * Class Avatar
- * @package vitalik74\primer
+ * @see @see http://primercss.io/avatars/
  */
 class Avatar extends Object
 {
