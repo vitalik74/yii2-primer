@@ -1,9 +1,4 @@
 <?php
-/**
- * Class Nav
- * @author Tsibikov Vitaliy <tsibikov_vit@mail.ru> <tsibikov.com>
- * Create date: 28.04.2015 16:36
- */
 
 namespace vitalik74\primer;
 
@@ -11,9 +6,27 @@ use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
-//@todo add <span class="menu-heading">Menu heading</span>
 /**
- * Class Nav
+ * Provide menu. Class based on [[\yii\bootstrap\Nav]] and override him.
+ *
+ * Example use in your view:
+ *
+ * ```
+ * <?php
+ * use vitalik74\primer\Nav;
+ * ?>
+ *
+ * <div class="site-nav">
+ * <?= Nav::widget([
+ *      'items' => [
+ *          ['label' => 'Account', 'url' => ['log/in'], 'active' => true],
+ *          ['label' => 'Profile', 'url' => 'log/out']
+ *      ]
+ * ]) ?>
+ * </div>
+ * ```
+ *
+ * @author Tsibikov Vitaliy <tsibikov_vit@mail.ru> <tsibikov.com>
  * @see http://primercss.io/nav/
  */
 class Nav extends \yii\bootstrap\Nav

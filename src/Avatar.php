@@ -1,27 +1,49 @@
 <?php
-/**
- * Class Avatar
- * @author Tsibikov Vitaliy <tsibikov_vit@mail.ru> <tsibikov.com>
- * Create date: 24.04.2015 11:33
- */
 
 namespace vitalik74\primer;
-
 
 use yii\base\Object;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
 /**
- * Class Avatar
+ * Provide show avatar.
+ *
+ * Example use in your view:
+ *
+ * ```
+ * <?php
+ * use vitalik74\primer\Avatar;
+ * ?>
+ * <div class="site-avatar">
+ * <?= Avatar::avatar('//avatar.jpg', ['width' => 30, 'height' => 80]) ?>
+ * <?= Avatar::avatarSmall('//avatar.jpg', ['width' => 30, 'height' => 80]) ?>
+ * <?= Avatar::avatarParent([
+ *      'parent' => [
+ *          'src' => '//avatar.jpg',
+ *          'options' => [
+ *              'width' => 30,
+ *              'height' => 80,
+ *              'id' => 'parent_avatar']
+ *          ],
+ *      'child' => [
+ *          'src' => '//avatar2.jpg',
+ *          'options' => [
+ *              ['width' => 15, 'height' => 40]
+ *          ]
+ *      ]
+ *  ], 'left') ?>
+ * </div>
+ *
+ * @author Tsibikov Vitaliy <tsibikov_vit@mail.ru> <tsibikov.com>
  * @see @see http://primercss.io/avatars/
  */
 class Avatar extends Object
 {
     /**
      * Return img Html-code with avatar
-     * @param $src
-     * @param array $options
+     * @param string $src path to avatar
+     * @param array $options keys-values pair of options use in [[Html::tag()]]
      * @param string $type possible values 'avatar-small' or ''
      * @return string
      * @see http://primercss.io/avatars/#basic-example
@@ -33,8 +55,8 @@ class Avatar extends Object
 
     /**
      * Return img Html-code with avatar small
-     * @param $src
-     * @param array $options
+     * @param string $src path to avatar
+     * @param array $options keys-values pair of options use in [[Html::tag()]]
      * @return string
      * @see http://primercss.io/avatars/#small-avatars
      */
@@ -45,8 +67,8 @@ class Avatar extends Object
 
     /**
      * Return img Html-code with avatar and child
-     * @param $options['parent' => ['src' => '...', 'options' => []], 'child' => ['src' => '...', 'options' => []]]
-     * @param string $positionChild
+     * @param array $options['parent' => ['src' => '...', 'options' => []], 'child' => ['src' => '...', 'options' => []]] input array with parent and child
+     * @param string $positionChild position child. Possible values `right` or `left`
      * @return string
      * @see http://primercss.io/avatars/#parent-child-avatars
      */

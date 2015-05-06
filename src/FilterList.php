@@ -1,40 +1,30 @@
 <?php
-/**
- * Class FilterList
- * @author Tsibikov Vitaliy <tsibikov_vit@mail.ru> <tsibikov.com>
- * Create date: 29.04.2015 9:05
- */
 
 namespace vitalik74\primer;
-
-/*
-<ul class="filter-list">
-  <li>
-    <a href="#" class="filter-item selected">
-      <span class="count">21</span>
-      First filter
-    </a>
-  </li>
-  <li>
-    <a href="#" class="filter-item">
-      <span class="count">3</span>
-      Second filter
-    </a>
-  </li>
-  <li>
-    <a href="#" class="filter-item">
-      Third filter
-    </a>
-  </li>
-</ul>
-*/
-use yii\base\InvalidConfigException;
-use yii\base\Widget;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
+use yii\base\InvalidConfigException;
 
 /**
- * Class FilterList
+ * Class provide html code a vertical list of filters. Class based on [[\yii\bootstrap\Nav]] and override him.
+ *
+ * Example use in your view:
+ *
+ * ```
+ * <?php
+ * use vitalik74\primer\FilterList;
+ * ?>
+ *
+ * <div class="site-state">
+ * <?= FilterList::widget([
+ *      'items' => [
+ *          ['label' => 'Account', 'url' => ['log/in'], 'active' => true],
+ *          ['label' => 'Profile', 'url' => 'log/out']
+ *      ]
+ * ]) ?>
+ * </div>
+ * ```
+ * @author Tsibikov Vitaliy <tsibikov_vit@mail.ru> <tsibikov.com>
  * @see http://primercss.io/nav/#filter-list
  */
 class FilterList extends \yii\bootstrap\Nav

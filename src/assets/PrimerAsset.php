@@ -1,12 +1,9 @@
 <?php
-/**
- * @copyright Copyright (c) 2014
- */
 
 namespace vitalik74\primer\assets;
 
-
 use yii\web\AssetBundle;
+
 /**
  * PrimerAsset is declare source to Primer-css
  *

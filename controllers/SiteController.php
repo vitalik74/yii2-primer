@@ -99,4 +99,9 @@ class SiteController extends Controller
             'model' => new User()
         ]);
     }
+
+    public function actionAlert()
+    {
+        return $this->render('alert');
+    }
 }

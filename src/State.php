@@ -1,25 +1,54 @@
 <?php
-/**
- * Class State
- * @author Tsibikov Vitaliy <tsibikov_vit@mail.ru> <tsibikov.com>
- * Create date: 24.04.2015 10:19
- */
 
 namespace vitalik74\primer;
-
 
 use yii\base\Object;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
+/**
+ * Provide html-code to state indicators.
+ *
+ * Example use in your view:
+ * ```
+ * <?php
+ * use vitalik74\primer\State;
+ * ?>
+ *
+ * <div class="site-state">
+ * <?= State::open('open', '', ['id' => 'open']) ?>
+ * <?= State::open('proposed', 'proposed', ['id' => 'proposed']) ?>
+ * <?= State::open('reopened', 'reopened', ['id' => 'reopened']) ?>
+ * <?= State::closed('closed', ['id' => 'closed']) ?>
+ * <?= State::merged('merged', ['id' => 'merged']) ?>
+ * </div>
+ * ```
+ *
+ * @author Tsibikov Vitaliy <tsibikov_vit@mail.ru> <tsibikov.com>
+ * @see http://primercss.io/states/
+ */
 class State extends Object
 {
+    /**
+     * Default html-class of state
+     * @var string
+     */
     private static $_stateClass = 'state ';
 
     /**
-     * @param $content
-     * @param string $type
-     * @param array $options
+     * Return html-code with state indicator
+     *
+     * ```
+     * <?php
+     * use vitalik74\primer\State;
+     * ?>
+     *
+     * <?= State::open('open', '', ['id' => 'open']) ?>
+     * ```
+     *
+     * @param string $content content to include in container
+     * @param string $type type indicator. Possible type open, closed, merged
+     * @param array $options keys-values pair of options use in [[Html::tag()]]
      * @return string
      * @see http://primercss.io/states/#open-green
      */
@@ -33,24 +62,44 @@ class State extends Object
     }
 
     /**
-     * @param $content
+     * Synonim of [[open()]]. This is syntactic sugar.
+     *
+     * ```
+     * <?php
+     * use vitalik74\primer\State;
+     * ?>
+     *
+     * <?= State::closed('closed', ['id' => 'closed']) ?>
+     * ```
+     *
+     * @param string $content
      * @param array $options
      * @return string
      * @see http://primercss.io/states/#closed-red
      */
     public static function closed($content, $options = [])
     {
-        return Html::tag('span', $content, ArrayHelper::merge($options, ['class' => static::$_stateClass . 'state-closed']));
+        return static::open($content, 'closed', $options);
     }
 
     /**
-     * @param $content
+     * Synonim of [[open()]]. This is syntactic sugar.
+     *
+     * ```
+     * <?php
+     * use vitalik74\primer\State;
+     * ?>
+     *
+     * <?= State::merged('merged', ['id' => 'merged']) ?>
+     * ```
+     *
+     * @param string $content
      * @param array $options
      * @return string
      * @see http://primercss.io/states/#merged-purple
      */
     public static function merged($content, $options = [])
     {
-        return Html::tag('span', $content, ArrayHelper::merge($options, ['class' => static::$_stateClass . 'state-merged']));
+        return static::open($content, 'merged', $options);
     }
 }

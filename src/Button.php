@@ -1,22 +1,40 @@
 <?php
-/**
- * @copyright Copyright (c) 2014
- */
 
 namespace vitalik74\primer;
-
 
 use yii\base\Object;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
 /**
- * Class ButtonsWidget
+ * Provide html code to show buttons
+ *
+ * In class use trait [[vitalik74\primer\UtilsTrait]].
+ *
+ * Example use in your view:
+ *
+ * ```
+ * <?php
+ * use vitalik74\primer\Button;
+ * ?>
+ *
+ * <div class="site-button">
+ * <?= Button::button('simple button') ?>
+ * <?= Button::button('primary button', 'primary', ['id' => 'primary_button']) ?>
+ * <?= Button::button('smallPrimary button', 'smallPrimary', ['id' => 'smallPrimary_button']) ?>
+ * <?= Button::button('small button', 'small', ['id' => 'small_button']) ?>
+ * <?= Button::button('smallDanger button', 'smallDanger', ['id' => 'smallDanger_button']) ?>
+ * <?= Button::button('danger button', 'danger', ['id' => 'danger_button']) ?>
+ * </div>
+ * ```
+ *
  * @author Tsibikov Vitaliy <tsibikov_vit@mail.ru> <tsibikov.com>
  * @see http://primercss.io/buttons
  */
 class Button extends Object
 {
+    use UtilsTrait;
+
     /**
      * Possible value for types. Key-value pairs for convert to class
      * @var array
@@ -32,6 +50,15 @@ class Button extends Object
 
     /**
      * Render button
+     *
+     * ```
+     * <?php
+     * use vitalik74\primer\Button;
+     * ?>
+     *
+     * <?= Button::button('simple button') ?>
+     * ```
+     *
      * @param string $content content to put between <button></button>
      * @param string $typeButton possible values @see $_typeButtons
      * @param array $options html options in terms of name-value pairs
@@ -40,11 +67,20 @@ class Button extends Object
      */
     public static function button($content = '', $typeButton = 'default', $options = [])
     {
-        return Html::tag('button', $content, ArrayHelper::merge($options, ['class' => static::getTypeButtonClass($typeButton), 'type' => 'button']));
+        return Html::tag('button', $content, ArrayHelper::merge($options, ['class' => static::getType($typeButton, static::$_typeButtons, 'default'), 'type' => 'button']));
     }
 
     /**
      * Render link button
+     *
+     * ```
+     * <?php
+     * use vitalik74\primer\Button;
+     * ?>
+     *
+     * <?= Button::linkButton('simple button') ?>
+     * ```
+     *
      * @param string $content $content content to put between <a></a>
      * @param string $typeButton possible values 'default, primary, smallPrimary, small, smallDanger, danger'
      * @param array|string|null $url route from link
@@ -54,16 +90,6 @@ class Button extends Object
      */
     public static function linkButton($content = '', $typeButton = 'default', $url = null, $options = [])
     {
-        return Html::a($content, $url, ArrayHelper::merge($options, ['class' => static::getTypeButtonClass($typeButton), 'role' => 'button']));
-    }
-
-    /**
-     * Provide css class from type button
-     * @param $typeButton
-     * @return mixed
-     */
-    private static function getTypeButtonClass($typeButton)
-    {
-        return static::$_typeButtons[$typeButton] ?: static::$_typeButtons['default'];
+        return Html::a($content, $url, ArrayHelper::merge($options, ['class' => static::getType($typeButton, static::$_typeButtons, 'default'), 'role' => 'button']));
     }
 }
