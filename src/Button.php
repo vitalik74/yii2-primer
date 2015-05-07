@@ -7,7 +7,7 @@ use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
 /**
- * Provide html code to show buttons
+ * Provide html code to show buttons.
  *
  * In class use trait [[vitalik74\primer\UtilsTrait]].
  *

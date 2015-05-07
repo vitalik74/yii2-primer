@@ -5,7 +5,7 @@ namespace vitalik74\primer\assets;
 use yii\web\AssetBundle;
 
 /**
- * PrimerAsset is declare source to Primer-css
+ * PrimerAsset is declare source to Primer-css.
  *
  * @author Tsibikov Vitaliy <tsibikov_vit@mail.ru> <tsibikov.com>
  */

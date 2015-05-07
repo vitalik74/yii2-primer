@@ -1,7 +1,7 @@
 {
-  "name": "vitalik74/yii2-primer",
+  "name": "vitalik74/yii2-primercss",
   "description": "This is Yii2 extension for PrimerCss",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "yii2-extension",
   "keywords": [
     "yii2",
@@ -21,28 +21,26 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/vitalik74/yii2-primer/issues?state=open",
-    "source": "https://github.com/vitalik74/yii2-primer",
+    "issues": "https://github.com/vitalik74/yii2-primercss/issues?state=open",
+    "source": "https://github.com/vitalik74/yii2-primercss",
     "email": "tsibikov_vit@mail.ru"
   },
   "require": {
     "php": ">=5.4.0",
     "yiisoft/yii2": "*",
     "bower-asset/primer-css": "@stable",
-    "yiisoft/yii2-bootstrap": "*",
-    "yiisoft/yii2-swiftmailer": "*",
-    "yiisoft/yii2-codeception": "*",
+    "yiisoft/yii2-bootstrap": "*"
+  },
+  "require-dev": {
     "codeception/codeception": "2.0.*",
     "codeception/specify": "*",
     "codeception/verify": "*",
-    "yiisoft/yii2-faker": "*"
-  },
-  "require-dev": {
     "yiisoft/yii2-codeception": "*",
     "yiisoft/yii2-debug": "*",
     "yiisoft/yii2-gii": "*",
     "yiisoft/yii2-faker": "*",
-    "yiisoft/yii2-apidoc": "*"
+    "yiisoft/yii2-apidoc": "*",
+    "yiisoft/yii2-faker": "*"
   },
   "autoload": {
     "psr-4": {
